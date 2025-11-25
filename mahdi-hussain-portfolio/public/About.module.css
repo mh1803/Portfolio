@@ -1,0 +1,223 @@
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6rem 6%;
+
+  background: linear-gradient(
+    135deg,
+    #0d1024 0%,
+    #11182c 70%,
+    #0c0f1c 100%
+  );
+
+  color: #eef3ff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+.aboutSectionInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.aboutInfo {
+  flex: 2 1 70%;
+  max-width: 1300px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.3rem;
+  margin-bottom: 1.9rem;
+  font-weight: 700;
+  color: #ffffff; 
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.65),
+    0 0 18px rgba(255, 255, 255, 0.45);
+}
+
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d9e2f0;
+  margin-bottom: 2.2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1.6rem; 
+  flex-wrap: wrap;
+}
+
+.tileButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem 2rem;
+  border-radius: 1rem;
+
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+
+
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.25s ease;
+
+  text-decoration: none;
+}
+
+.tileButton:hover {
+  transform: translateY(-4px) scale(1.04);
+
+  background: rgba(255, 255, 255, 0.22);
+  border-color: #ffffff;
+
+  box-shadow:
+    0 0 14px rgba(255, 255, 255, 0.55);
+}
+
+
+
+.logoContainer {
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logoImage {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.logoImage:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.45);
+}
+
+
+.animateOnScroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutInfo.animateOnScroll {
+  transition-delay: 0.1s;
+}
+
+.logoContainer.animateOnScroll {
+  transition-delay: 0.2s;
+}
+
+.tileButton.animateOnScroll {
+  transition-delay: 0.3s;
+}
+
+.title.animateOnScroll {
+  transition-delay: 0.15s;
+}
+
+.description.animateOnScroll {
+  transition-delay: 0.2s;
+}
+
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (max-width: 1100px) {
+  .aboutSectionInner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutInfo {
+    max-width: 90%;
+    padding: 2.2rem;
+    margin-top: 59px;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+  }
+
+  .logoContainer {
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .logoImage {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutSection {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    scroll-margin-top: 70px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .tileButton {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .logoImage {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,175 @@
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6rem 6%;
+  
+  background: linear-gradient(
+    135deg,
+    #0d1024 0%,
+    #11182c 70%,
+    #0c0f1c 100%
+  );
+
+  color: #eef3ff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactSectionInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  z-index: 2;
+}
+
+.contactForm {
+  flex: 1;
+  max-width: 900px;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1.5rem;
+  padding: 3rem;
+
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
+
+  position: relative;
+}
+
+.contactTitle {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+
+  text-align: center;
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.65),
+    0 0 18px rgba(255, 255, 255, 0.45);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+.formGroup label {
+  margin-bottom: 0.4rem;
+  color: #d9e2f0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: #ffffff;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+
+  box-shadow:
+    0 0 14px rgba(255, 255, 255, 0.35);
+}
+
+
+.submitButton {
+  width: 100%;
+  padding: 1.2rem 0;
+
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(10px);
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.25s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-4px) scale(1.04);
+
+  background: rgba(255, 255, 255, 0.22);
+  border-color: #ffffff;
+
+  box-shadow:
+    0 0 14px rgba(255, 255, 255, 0.55);
+}
+
+
+.statusMessage {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #e2e8ff;
+
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+
+.scrollReveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollReveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 900px) {
+  .contactForm {
+    max-width: 90%;
+    padding: 2.2rem;
+  }
+
+  .contactTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactSection {
+    padding: 3rem 1.5rem;
+    scroll-margin-top: 70px;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 0.95rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+  }
+}
