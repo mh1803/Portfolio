@@ -28,12 +28,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* IMAGE */}
       <div className={styles.imageWrapper}>
-        <img
-          src={image || placeholderImage}
-          alt={title}
-          className={styles.projectImage}
-        />
+        {liveDemo ? (
+          <a href={liveDemo} target="_blank" rel="noopener noreferrer">
+            <img
+              src={image || placeholderImage}
+              alt={title}
+              className={styles.projectImage}
+            />
+          </a>
+        ) : (
+          <img
+            src={image || placeholderImage}
+            alt={title}
+            className={styles.projectImage}
+          />
+        )}
       </div>
+
 
       {/* CONTENT */}
       <div className={styles.projectContent}>

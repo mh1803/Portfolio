@@ -46,7 +46,7 @@
   border-radius: 1.5rem;
   padding: 3rem;
 
-  height: 480px;
+  min-height: 480px;
   overflow: hidden;
   backdrop-filter: blur(14px);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
@@ -110,6 +110,8 @@
   line-height: 1.7;
   margin-bottom: 1.4rem;
   color: #d9e2f0;
+  white-space: pre-line;
+
 }
 
 .techList {

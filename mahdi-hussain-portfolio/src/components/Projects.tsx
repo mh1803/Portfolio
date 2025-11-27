@@ -31,11 +31,13 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: "EventQibla",
-      description:
-        "A ticketing and marketing platform tailored for Islamic community events across the UK. Built with React, Node.js, and PostgreSQL.",
-      tech: ["TypeScript", "React", "Vite", "Node.js", "PostgreSQL", "Postman", "API"],
+      description: `A modern event platform built for Islamic community organisers, featuring ticket sales, event management, and secure QR-based ticketing. Developed with React, Node.js, Express, and PostgreSQL.
+      
+      This project achieved a first-class grade as part of my dissertation, which is included in the documentation.`,
+
+      tech: ["TypeScript", "Node.js", "Express.js", "React", "PostgreSQL", "CSS", "Postman", "Vite", "REST API"],
       liveDemo: "#",
-      repository: "#",
+      repository: "https://github.com/mh1803/EventQibla",
       documentation: Dissertation, 
       image: EventQibla,
     },
@@ -44,8 +46,8 @@ const Projects: React.FC = () => {
       description:
         "A responsive personal portfolio built with React and modern CSS to showcase projects and experience.",
       tech: ["TypeScript", "React", "Vite", "CSS Modules"],
-      liveDemo: "#",
-      repository: "#",
+      liveDemo: "/",
+      repository: "https://github.com/mh1803/Portfolio/tree/main",
       image: Portfolio,
     },
   ];
