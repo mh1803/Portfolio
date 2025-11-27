@@ -126,13 +126,35 @@
 
 
 .statusMessage {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 2.5rem;
   text-align: center;
-  color: #e2e8ff;
+  font-size: 1.05rem;
+  font-weight: 600;
 
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(90deg, #FFE066, #FFF2A6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 0 6px rgba(255, 240, 150, 0.35),
+    0 0 14px rgba(255, 220, 120, 0.25);
+
+  opacity: 0;
+  animation: fadePop 0.5s ease forwards;
 }
+
+@keyframes fadePop {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 
 
 .scrollReveal {

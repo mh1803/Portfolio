@@ -117,7 +117,10 @@ function Contact() {
           Send Message
         </button>
 
-        {status && <p className={`${styles.statusMessage} ${styles.scrollReveal}`}>{status}</p>}
+        {status && (
+          <p className={styles.statusMessage}>{status}</p>
+        )}
+
       </form>
     </div>
   );
