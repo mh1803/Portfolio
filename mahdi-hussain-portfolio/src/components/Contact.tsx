@@ -21,7 +21,7 @@ function Contact() {
     setStatus("Sending...");
 
     const data = {
-      access_key: "abbe9dc6-891f-4a8f-86e8-d83a72e40476",
+      access_key: import.meta.env.VITE_WEB3_ACCESS_KEY,
       name: formData.name,
       email: formData.email,
       message: formData.message
