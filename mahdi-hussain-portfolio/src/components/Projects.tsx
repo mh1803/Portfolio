@@ -35,8 +35,8 @@ const Projects: React.FC = () => {
       
       This project achieved a first-class grade as part of my dissertation, which is included in the documentation.`,
 
-      tech: ["TypeScript", "Node.js", "Express.js", "React", "PostgreSQL", "CSS", "Postman", "Vite", "REST API"],
-      liveDemo: "#",
+      tech: ["TypeScript", "Node.js", "Express.js", "React", "PostgreSQL", "Postman", "Vite", "REST"],
+      liveDemo: "https://eventqibla.netlify.app/",
       repository: "https://github.com/mh1803/EventQibla",
       documentation: Dissertation, 
       image: EventQibla,
