@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
       title: "Portfolio Website",
       description:
         "A responsive personal portfolio built with React and modern CSS to showcase projects and experience.",
-      tech: ["TypeScript", "React", "Vite", "CSS Modules"],
+      tech: ["TypeScript", "React", "Vite", "CSS"],
       liveDemo: "/",
       repository: "https://github.com/mh1803/Portfolio/tree/main",
       image: Portfolio,

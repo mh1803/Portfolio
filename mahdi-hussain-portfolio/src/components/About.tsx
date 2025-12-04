@@ -32,7 +32,7 @@ function About() {
           <div className={`${styles.aboutInfo} ${styles.animateOnScroll}`}>
             <h1 className={`${styles.title} ${styles.animateOnScroll}`}>Who Am I?</h1>
             <p className={`${styles.description} ${styles.animateOnScroll}`}>
-              My name is <strong>Mahdi Hussain</strong>, and I'm 22 years old. I've always had a lifelong aspiration to become a software engineer.
+              My name is <strong>Mahdi Hussain</strong>, and I'm a 22 years old software developer based in <strong>London</strong>.
               My passion for technology began at a young age and has guided my academic journey - from studying Computer Science in secondary school and sixth form,
               all the way through to higher education.
               <br />
