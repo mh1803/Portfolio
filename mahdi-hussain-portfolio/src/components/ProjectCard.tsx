@@ -1,17 +1,17 @@
-import React from 'react'
-import { FiExternalLink, FiGithub, FiFileText } from 'react-icons/fi'
-import styles from '../../public/Projects.module.css'
+import React from "react";
+import { FiExternalLink, FiGithub, FiFileText } from "react-icons/fi";
+import styles from "../../public/Projects.module.css";
 
-import placeholderImage from '../../public/EventQibla.png'
+import placeholderImage from "../../public/EventQibla.png";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  tech: string[]
-  liveDemo?: string
-  repository?: string
-  documentation?: string
-  image?: string
+  title: string;
+  description: string;
+  tech: string[];
+  liveDemo?: string;
+  repository?: string;
+  documentation?: string;
+  image?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -21,11 +21,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveDemo,
   repository,
   documentation,
-  image
+  image,
 }) => {
   return (
     <div className={styles.projectCard}>
-
       {/* IMAGE */}
       <div className={styles.imageWrapper}>
         {liveDemo ? (
@@ -44,7 +43,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           />
         )}
       </div>
-
 
       {/* CONTENT */}
       <div className={styles.projectContent}>
@@ -67,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiExternalLink size={18} style={{ marginRight: '8px' }} />
+              <FiExternalLink size={18} style={{ marginRight: "8px" }} />
               Live Demo
             </a>
           )}
@@ -79,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiGithub size={18} style={{ marginRight: '8px' }} />
+              <FiGithub size={18} style={{ marginRight: "8px" }} />
               Repository
             </a>
           )}
@@ -91,15 +89,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiFileText size={18} style={{ marginRight: '8px' }} />
+              <FiFileText size={18} style={{ marginRight: "8px" }} />
               Documentation
             </a>
           )}
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

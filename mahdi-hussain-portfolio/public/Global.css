@@ -4,31 +4,30 @@ html {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #fff #101526; 
+  scrollbar-color: #fff #101526;
 
-::-webkit-scrollbar {
-  width: 16px; 
-}
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
 
-::-webkit-scrollbar-track {
-  background: black; 
-  border-radius: 12px;
-}
+  ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 12px;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #fff; 
-  border-radius: 12px;
-  border: 3px solid #101526; 
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); 
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 12px;
+    border: 3px solid #101526;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px rgba(255, 255, 255, 1); 
-}
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 14px rgba(255, 255, 255, 1);
+  }
 
-::-webkit-scrollbar-corner {
-  background: #101526;
-}
-
+  ::-webkit-scrollbar-corner {
+    background: #101526;
+  }
 }

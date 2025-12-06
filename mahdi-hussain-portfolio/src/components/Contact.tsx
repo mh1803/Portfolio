@@ -5,7 +5,7 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const [status, setStatus] = useState("");
@@ -24,16 +24,16 @@ function Contact() {
       access_key: import.meta.env.VITE_WEB3_ACCESS_KEY,
       name: formData.name,
       email: formData.email,
-      message: formData.message
+      message: formData.message,
     };
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     });
 
     const result = await response.json();
@@ -68,7 +68,7 @@ function Contact() {
     );
 
     elements.forEach((el, index) => {
-      el.style.transitionDelay = `${index * 0.1}s`; 
+      el.style.transitionDelay = `${index * 0.1}s`;
       observer.observe(el);
     });
 
@@ -77,8 +77,13 @@ function Contact() {
 
   return (
     <div id="contact" ref={sectionRef} className={styles.contactSection}>
-      <form className={`${styles.contactForm} ${styles.scrollReveal}`} onSubmit={handleSubmit}>
-        <h2 className={`${styles.contactTitle} ${styles.scrollReveal}`}>Contact Me</h2>
+      <form
+        className={`${styles.contactForm} ${styles.scrollReveal}`}
+        onSubmit={handleSubmit}
+      >
+        <h2 className={`${styles.contactTitle} ${styles.scrollReveal}`}>
+          Contact Me
+        </h2>
 
         <div className={`${styles.formGroup} ${styles.scrollReveal}`}>
           <label>Name</label>
@@ -113,14 +118,14 @@ function Contact() {
           ></textarea>
         </div>
 
-        <button type="submit" className={`${styles.submitButton} ${styles.scrollReveal}`}>
+        <button
+          type="submit"
+          className={`${styles.submitButton} ${styles.scrollReveal}`}
+        >
           Send Message
         </button>
 
-        {status && (
-          <p className={styles.statusMessage}>{status}</p>
-        )}
-
+        {status && <p className={styles.statusMessage}>{status}</p>}
       </form>
     </div>
   );

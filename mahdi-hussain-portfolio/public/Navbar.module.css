@@ -1,10 +1,11 @@
 /* Ensure page uses full width but doesn’t shrink weirdly */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: svw;
   box-sizing: border-box;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -19,7 +20,7 @@ html, body {
   height: 10vh;
   padding: 0 4rem;
   background-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-bottom: 2px solid transparent;
   z-index: 1000;
   transition: background-color 0.4s ease, border-color 0.4s ease;
@@ -32,20 +33,16 @@ html, body {
 .left {
   display: flex;
   align-items: center;
-  color: #EBF4F6;
+  color: #ebf4f6;
 }
 
 .logo {
   width: 70px;
   height: 70px;
-  filter: 
-    drop-shadow(0 0 10px #FFFFFF)
-    drop-shadow(0 0 22px #FFFFFF)
-    drop-shadow(0 0 32px #EBF4F6);
+  filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 22px #ffffff)
+    drop-shadow(0 0 32px #ebf4f6);
   transition: filter 0.3s ease;
 }
-
-
 
 .right {
   display: flex;
@@ -57,10 +54,8 @@ html, body {
   padding-right: 20px;
 }
 
-
-
 .right a {
-  color: #EBF4F6;
+  color: #ebf4f6;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.2rem;
@@ -69,32 +64,28 @@ html, body {
 }
 
 .right a:hover {
-  text-shadow: 
-    0 0 10px #FFFFFF,
-    0 0 18px #FFFFFF,
-    0 0 28px #EBF4F6,
-    0 0 38px #C0C0C0;
+  text-shadow: 0 0 10px #ffffff, 0 0 18px #ffffff, 0 0 28px #ebf4f6,
+    0 0 38px #c0c0c0;
 }
-
 
 @media (max-width: 700px) {
   .navbar {
-    flex-direction: column;       
-    align-items: center;          
-    height: auto;                 
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     padding: 0.4rem 2rem;
   }
 
-  .left {       
-    justify-content: center;      
+  .left {
+    justify-content: center;
   }
 
   .right {
-    flex-direction: row;           
-    gap: 2.2rem;                     
+    flex-direction: row;
+    gap: 2.2rem;
     padding-top: 0.3rem;
-    justify-content: center;       
-    width: 100%;                   
+    justify-content: center;
+    width: 100%;
     padding-right: 5px;
     padding-left: 5px;
     letter-spacing: 1px;
@@ -102,6 +93,6 @@ html, body {
   }
 
   .right a {
-    font-size: 1rem;              
+    font-size: 1rem;
   }
 }

@@ -5,20 +5,14 @@
   min-height: 100vh;
   padding: 6rem 6%;
 
-  background: linear-gradient(
-    135deg,
-    #0d1024 0%,
-    #11182c 70%,
-    #0c0f1c 100%
-  );
+  background: linear-gradient(135deg, #0d1024 0%, #11182c 70%, #0c0f1c 100%);
 
   color: #eef3ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   z-index: 2;
   overflow: hidden;
 }
-
 
 .aboutSectionInner {
   display: flex;
@@ -46,12 +40,10 @@
   font-size: 2.3rem;
   margin-bottom: 1.9rem;
   font-weight: 700;
-  color: #ffffff; 
-  text-shadow:
-    0 0 10px rgba(255, 255, 255, 0.65),
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.65),
     0 0 18px rgba(255, 255, 255, 0.45);
 }
-
 
 .description {
   font-size: 1.1rem;
@@ -62,7 +54,7 @@
 
 .buttonContainer {
   display: flex;
-  gap: 1.6rem; 
+  gap: 1.6rem;
   flex-wrap: wrap;
 }
 
@@ -73,9 +65,8 @@
   padding: 1.2rem 2rem;
   border-radius: 1rem;
 
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-
 
   color: #ffffff;
   font-weight: 500;
@@ -96,11 +87,8 @@
   background: rgba(255, 255, 255, 0.22);
   border-color: #ffffff;
 
-  box-shadow:
-    0 0 14px rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.55);
 }
-
-
 
 .logoContainer {
   flex: 1 1 25%;
@@ -125,7 +113,6 @@
   transform: scale(1.07);
   box-shadow: 0 0 45px rgba(255, 255, 255, 0.45);
 }
-
 
 .animateOnScroll {
   opacity: 0;
@@ -158,9 +145,9 @@
   transition-delay: 0.2s;
 }
 
-
 @keyframes glowPulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
   }
   50% {

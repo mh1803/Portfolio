@@ -1,20 +1,14 @@
-
 .contactSection {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 6rem 6%;
-  
-  background: linear-gradient(
-    135deg,
-    #0d1024 0%,
-    #11182c 70%,
-    #0c0f1c 100%
-  );
+
+  background: linear-gradient(135deg, #0d1024 0%, #11182c 70%, #0c0f1c 100%);
 
   color: #eef3ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -51,8 +45,7 @@
 
   text-align: center;
 
-  text-shadow:
-    0 0 10px rgba(255, 255, 255, 0.65),
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.65),
     0 0 18px rgba(255, 255, 255, 0.45);
 }
 
@@ -89,17 +82,15 @@
   background: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.5);
 
-  box-shadow:
-    0 0 14px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
 }
-
 
 .submitButton {
   width: 100%;
   padding: 1.2rem 0;
 
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
 
   backdrop-filter: blur(10px);
@@ -120,10 +111,8 @@
   background: rgba(255, 255, 255, 0.22);
   border-color: #ffffff;
 
-  box-shadow:
-    0 0 14px rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.55);
 }
-
 
 .statusMessage {
   margin-top: 2.5rem;
@@ -131,13 +120,12 @@
   font-size: 1.05rem;
   font-weight: 600;
 
-  background: linear-gradient(90deg, #FFE066, #FFF2A6);
+  background: linear-gradient(90deg, #ffe066, #fff2a6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 
-  text-shadow:
-    0 0 6px rgba(255, 240, 150, 0.35),
+  text-shadow: 0 0 6px rgba(255, 240, 150, 0.35),
     0 0 14px rgba(255, 220, 120, 0.25);
 
   opacity: 0;
@@ -155,8 +143,6 @@
   }
 }
 
-
-
 .scrollReveal {
   opacity: 0;
   transform: translateY(30px);
@@ -167,7 +153,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 
 @media (max-width: 900px) {
   .contactForm {
