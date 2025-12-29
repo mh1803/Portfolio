@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import styles from "../../public/Projects.module.css";
 import ProjectCard from "./ProjectCard";
 import EventQibla from "../../public/EventQibla.png";
+import SpendBee from "../../public/SpendBee.png";
 import Dissertation from "../../public/Dissertation_mh660.pdf";
 import Portfolio from "../../public/Portfolio.png";
 
@@ -29,7 +30,26 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "EventQibla",
+      title: "SpendBee",
+      description: `An AI-powered bank statement analyser that helps users instantly understand their spending habits. SpendBee automatically categorises transactions, tracks income and expenses, and presents clear financial insights through intuitive visualisations.
+
+  Built with React, TypeScript, Node.js, and Express, and powered by OpenAI to intelligently interpret real-world bank statements.`,
+
+      tech: [
+        "OpenAI",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "React",
+        "Vite",
+        "REST",
+      ],
+      liveDemo: "https://spend-bee.netlify.app/",
+      repository: "https://github.com/mh1803/SpendBee",
+      image: SpendBee,
+    },
+    {
+      title: "Event Qibla",
       description: `A modern event platform built for Islamic community organisers, featuring ticket sales, event management, and secure QR-based ticketing. Developed with React, Node.js, Express, and PostgreSQL.
       
       This project achieved a first-class grade as part of my dissertation, which is included in the documentation.`,
