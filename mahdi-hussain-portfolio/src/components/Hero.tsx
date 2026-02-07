@@ -1,6 +1,6 @@
 import styles from "../../public/Hero.module.css";
 import { FaEye } from "react-icons/fa";
-import CV from "../../public/Mahdi_Hussain_CV_2025.pdf";
+import CV from "../../public/Mahdi_Hussain_CV_2026.pdf";
 
 function Hero() {
   return (
