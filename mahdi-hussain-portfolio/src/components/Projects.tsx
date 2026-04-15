@@ -5,6 +5,7 @@ import EventQibla from "../../public/EventQibla.png";
 import SpendBee from "../../public/SpendBee.png";
 import Dissertation from "../../public/Dissertation_mh660.pdf";
 import Portfolio from "../../public/Portfolio.png";
+import MMS from "../../public/MMS.png";
 
 const Projects: React.FC = () => {
   // Scroll reveal effect
@@ -20,7 +21,7 @@ const Projects: React.FC = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     elements.forEach((el) => observer.observe(el));
@@ -47,6 +48,28 @@ const Projects: React.FC = () => {
       liveDemo: "https://spend-bee.netlify.app/",
       repository: "https://github.com/mh1803/SpendBee",
       image: SpendBee,
+    },
+    {
+      title: "Merchant Management System",
+      description: `A production-style backend CRM for merchant onboarding, KYB verification, and lifecycle management. The system enforces real-world business rules, including status transitions, document verification requirements, and role-based admin controls.
+
+  Built with TypeScript, Node.js, Express, and PostgreSQL, with secure JWT authentication. Includes comprehensive unit and integration testing using Jest and Supertest to ensure reliability.
+
+  Features immutable audit history, operator lockout protection, and signed webhook delivery with retry handling to enable real-time updates and integration with external services.`,
+
+      tech: [
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "JWT",
+        "Zod",
+        "Jest",
+        "Supertest",
+        "REST",
+      ],
+      repository: "https://github.com/mh1803/Merchant-Management-System",
+      image: MMS,
     },
     {
       title: "Event Qibla",
