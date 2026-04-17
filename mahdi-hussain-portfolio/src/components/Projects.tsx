@@ -137,10 +137,7 @@ Implemented headless end-to-end testing using Playwright within the CI/CD pipeli
   ];
 
   return (
-    <section
-      id="projects"
-      className={`${styles.projectsSection} ${styles.scrollReveal}`}
-    >
+    <section id="projects" className={styles.projectsSection}>
       <h1 className={`${styles.title} ${styles.scrollReveal}`}>My Projects</h1>
 
       <div className={styles.projectsGrid}>
